@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R4000 Progress</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>R4000 Progress Tracker</h1>
+
+        <div class="progress-section">
+            <h2>Overall Progress</h2>
+            <h3>Drops</h3>
+            <div class="stats">
+                <div class="stat">
+                    <span class="label">Current:</span>
+                    <span class="value" id="completedDrops">0</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Total Needed:</span>
+                    <span class="value" id="totalDropsNeeded">0</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Remaining:</span>
+                    <span class="value" id="remainingDrops">0</span>
+                </div>
+            </div>
+            <h3>Distance</h3>
+            <div class="stats">
+                <div class="stat">
+                    <span class="label">Completed:</span>
+                    <span class="value" id="completedDistance">0</span> km
+                </div>
+                <div class="stat">
+                    <span class="label">Total Needed:</span>
+                    <span class="value" id="totalDistanceNeeded">0</span> km
+                </div>
+                <div class="stat">
+                    <span class="label">Remaining:</span>
+                    <span class="value" id="remainingDistance">0</span> km
+                </div>
+            </div>
+            
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar">
+                    <span class="progress-text" id="progressText">0%</span>
+                </div>
+            </div>
+        </div>
+                
+        <div class="progress-section">
+            <h2>Bike Progress</h2>
+            <div id="bikeProgressBars"></div>
+        </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

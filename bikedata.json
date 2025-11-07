@@ -1,0 +1,174 @@
+{
+    "bikes" : [
+        {
+            "id": 1,
+            "name": "Cannondale CAAD12",
+            "levels" : [
+                {
+                    "level": 0,
+                    "price": 10600,
+                    "purchased": true,
+                    "purchase_date": "2025-01-01"
+                },
+                {
+                    "level": 1,
+                    "price": 25000,
+                    "distance_needed": 100,
+                    "distance_completed": 81,
+                    "purchased": false,
+                    "purchase_date": null
+                },
+                {
+                    "level": 2,
+                    "price": 50000,
+                    "distance_needed": 130,
+                    "distance_completed": 0,
+                    "purchased": false,
+                    "purchase_date": null
+                },
+                {
+                    "level": 3,
+                    "price": 75000,
+                    "distance_needed": 160,
+                    "distance_completed": 0,
+                    "purchased": false,
+                    "purchase_date": null
+                },
+                {
+                    "level": 4,
+                    "price": 100000,
+                    "distance_needed": 190,
+                    "distance_completed": 0,
+                    "purchased": false,
+                    "purchase_date": null
+                },
+                {
+                    "level": 5,
+                    "price": 150000,
+                    "distance_needed": 220,
+                    "distance_completed": 0,
+                    "purchased": false,
+                    "purchase_date": null
+                }
+                
+            ]
+            
+        },
+        {
+            "id": 2,
+            "name": "CannondaleSynapse",
+            "levels" : [
+                {
+                    "level": 0,
+                    "price": 270100,
+                    "purchased": false,
+                    "purchase_date": null
+                },
+                {
+                    "level": 1,
+                    "price": 25000,
+                    "distance_needed": 100,
+                    "distance_completed": 0,
+                    "purchased": false,
+                    "purchase_date": null
+                },
+                {
+                    "level": 2,
+                    "price": 50000,
+                    "distance_needed": 130,
+                    "distance_completed": 0,
+                    "purchased": false,
+                    "purchase_date": null
+                },
+                {
+                    "level": 3,
+                    "price": 75000,
+                    "distance_needed": 160,
+                    "distance_completed": 0,
+                    "purchased": false,
+                    "purchase_date": null
+                },
+                {
+                    "level": 4,
+                    "price": 100000,
+                    "distance_needed": 190,
+                    "distance_completed": 0,
+                    "purchased": false,
+                    "purchase_date": null
+                },
+                {
+                    "level": 5,
+                    "price": 150000,
+                    "distance_needed": 220,
+                    "distance_completed": 0,
+                    "purchased": false,
+                    "purchase_date": null
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "CAAD13",
+            "levels" : [
+                {
+                    "level": 0,
+                    "price": 500000,
+                    "purchased": false,
+                    "purchase_date": null
+                },
+                {
+                    "level": 1,
+                    "price": 50000,
+                    "distance_needed": 160,
+                    "distance_completed": 100,
+                    "purchased": true,
+                    "purchase_date": "2025-02-10"
+                },
+                {
+                    "level": 2,
+                    "price": 100000,
+                    "distance_needed": 200,
+                    "distance_completed": 0,
+                    "purchased": false,
+                    "purchase_date": null
+                },
+                {
+                    "level": 3,
+                    "price": 150000,
+                    "distance_needed": 240,
+                    "distance_completed": 0,
+                    "purchased": false,
+                    "purchase_date": null
+                },
+                {
+                    "level": 4,
+                    "price": 200000,
+                    "distance_needed": 280,
+                    "distance_completed": 0,
+                    "purchased": false,
+                    "purchase_date": null
+                },
+                {
+                    "level": 5,
+                    "price": 2500,
+                    "distance_needed": 320,
+                    "distance_completed": 0,
+                    "purchased": false,
+                    "purchase_date": null
+                }
+            ]
+        }
+    ],
+    "activities": [
+        {
+            "timestamp": "2024-06-10T08:00:00Z",
+            "duration": "1:00:00",
+            "drop_total": 647548
+        },
+        {
+            "timestamp": "2025-11-07T10:30:00Z",
+            "duration": "1:00:00",
+            "drop_total": 667548
+        }
+    ]
+}
