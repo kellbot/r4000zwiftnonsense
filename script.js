@@ -177,6 +177,7 @@ function populateActivities(activities) {
     console.log('Estimated Completion Date:', estimatedCompletionDate);
 
     document.getElementById('estimatedCompletionDate').textContent = estimatedCompletionDate.toLocaleDateString();
+    document.getElementById('dphRs').textContent = Math.round(averageDropsPerHour).toLocaleString();
     activitiesContent.innerHTML = activitiesHTML;
 }
 
