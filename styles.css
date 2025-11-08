@@ -37,6 +37,25 @@ h2 {
     margin-bottom: 20px;
 }
 
+.riding-schedule {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin: -5px 0 10px 0;
+    font-style: italic;
+}
+
+.completion-date {
+    font-size: 1rem;
+    color: #667eea;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 8px;
+}
+
 .progress-section {
     margin-top: 20px;
 }
@@ -134,4 +153,181 @@ h2 {
     z-index: 1;
     left: 50%;
     transform: translateX(-50%);
+}
+
+/* Toggle Button */
+.toggle-panel-btn {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggle-panel-btn:hover {
+    padding-right: 25px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-panel-btn.panel-open {
+    left: 400px;
+}
+
+.toggle-panel-btn.panel-open .btn-icon {
+    transform: rotate(180deg);
+}
+
+.btn-icon {
+    transition: transform 0.3s ease;
+}
+
+/* Activities Panel */
+.activities-panel {
+    position: fixed;
+    left: -400px;
+    top: 0;
+    width: 400px;
+    height: 100vh;
+    background: white;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+}
+
+.activities-panel.open {
+    left: 0;
+}
+
+.panel-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.panel-header h2 {
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.close-panel-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-panel-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.panel-content {
+    padding: 20px;
+}
+
+.loading {
+    text-align: center;
+    color: #666;
+    padding: 40px 20px;
+}
+
+.activity-summary-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.activity-summary-box h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.summary-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.summary-label {
+    font-size: 0.95rem;
+    opacity: 0.95;
+}
+
+.summary-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.summary-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    opacity: 0.9;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.activity-item {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #667eea;
+}
+
+.activity-item:last-child {
+    margin-bottom: 0;
+}
+
+.activity-date {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.activity-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.activity-details strong {
+    color: #667eea;
 }
