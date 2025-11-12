@@ -101,6 +101,7 @@ function durationToHours(duration) {
 function populateActivities(activities) {
     const startingDrops = 609654;
     let totalDuration = 0;
+    let totalDropsEarned = 0;
     const activitiesContent = document.getElementById('activitiesContent');
     
     if (!activities || activities.length === 0) {
@@ -127,10 +128,15 @@ function populateActivities(activities) {
             hour: '2-digit',
             minute: '2-digit'
         });
-        
+
+        if (activity.starting_drops !== undefined) {
+            currentDrops = activity.starting_drops;
+        }
+
         activity.drops_earned = activity.drop_total - currentDrops;
         activity.durationHours = durationToHours(activity.duration);
         totalDuration += activity.durationHours;
+        totalDropsEarned+= activity.drops_earned;
 
         activityListHTML += `
             <div class="activity-item">
@@ -146,7 +152,6 @@ function populateActivities(activities) {
 
         // Calculate average drops per hour
     const completedDrops = sortedActivities[sortedActivities.length - 1].drop_total;
-    const totalDropsEarned = completedDrops - startingDrops;
     const averageDropsPerHour = totalDuration > 0 ? totalDropsEarned / totalDuration : 0;
     
     // Create summary box

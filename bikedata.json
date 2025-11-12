@@ -14,9 +14,9 @@
                     "level": 1,
                     "price": 25000,
                     "distance_needed": 100,
-                    "distance_completed": 81,
-                    "purchased": false,
-                    "purchase_date": null
+                    "distance_completed": 100,
+                    "purchased": true,
+                    "purchase_date": "2025-11-09"
                 },
                 {
                     "level": 2,
@@ -121,7 +121,7 @@
                     "price": 50000,
                     "distance_needed": 160,
                     "distance_completed": 100,
-                    "purchased": true,
+                    "purchased": false,
                     "purchase_date": "2025-02-10"
                 },
                 {
@@ -161,14 +161,21 @@
     ],
     "activities": [
         {
-            "timestamp": "2024-06-10T08:00:00Z",
-            "duration": "1:00:00",
-            "drop_total": 629654
-        },
-        {
             "timestamp": "2025-11-07T10:30:00Z",
             "duration": "1:00:00",
+            "starting_drops": 629654,
             "drop_total": 667548
+        },
+        {
+            "timestamp": "2025-11-09T09:15:00Z",
+            "duration": "0:22:00",
+            "starting_drops": 642548,
+            "drop_total": 653863
+        },
+        {
+            "timestamp": "2025-11-11T14:45:00Z",
+            "duration": "1:25:05",
+            "drop_total": 695257
         }
     ]
 }
